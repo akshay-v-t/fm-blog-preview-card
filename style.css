@@ -1,5 +1,11 @@
 @import url(/assets/fonts/Figtree-VariableFont_wght.ttf);
 @import url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 200 400 500 600 700 900; 
+    font-style: normal;
+}
 
 :root{
     --yellow :#F4D04E;
@@ -34,12 +40,21 @@ html, body{
     border-radius: 20px;
     gap: 24px;
     box-shadow: 8px 8px 0px var(--gray-950);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin: 20px;
 }
 
-.blog-img {
+.blog-card:hover{
+    box-shadow: 16px 16px 0px var(--gray-950);
+    transform: translateX(-8px);
+    transform: translateY(-8px);
    
-}
+    
+   
 
+}
 .blog-img img{
     object-fit: contain;
     width: 100%;
@@ -71,14 +86,20 @@ h4{
     font-size: 24px;
     font-weight: 800;
     line-height: 1px;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
 
 
+}
+
+ h4:hover{
+    color: var(--yellow);
 }
 
 p{
     color: var(--gray-500);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 150%;
 }
 
