@@ -44,6 +44,7 @@ html, body{
     transition-duration: 0.3s;
     cursor: pointer;
     margin: 20px;
+    border: 2px solid #000000;
 }
 
 .blog-card:hover{
@@ -59,7 +60,7 @@ html, body{
     object-fit: contain;
     width: 100%;
    
-    border: 2px solid #000000;
+   
     border-radius: 10px;
 }
 
